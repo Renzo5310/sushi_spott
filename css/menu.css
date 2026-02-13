@@ -1,0 +1,143 @@
+/* HERO */
+
+.hero-menu {
+  position: relative;
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+}
+
+.hero-menu img {
+  display: block;
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.menu-title {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 8px;
+  padding-top: 20px;
+  padding-left: 24px;
+  padding-right: 24px;
+  background: linear-gradient(
+    rgba(0,0,0,0.61),
+    rgba(0,0,0,0.61));              
+}
+
+.menu-title h1 {
+  color: white;
+  font-size: 24px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  margin-bottom: 8px;
+}
+
+.menu-title p {
+  font-size: 12px;
+  color: white;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  margin-bottom: 8px;
+}
+
+.hero-button { 
+  margin-top: 12px;
+  display: inline-block;
+  padding: 12px 18px;
+  background: #CC0202;
+  color: white;
+  text-decoration: none;
+  border-radius: 6px;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  font-size: 12px;
+}
+
+.hero-btn:hover{
+  opacity: 0.9;
+}
+
+/* TITLE */
+
+.section-title {
+  text-align: center;
+  margin: 45px 24px 24px;
+}
+
+.section-title h2 {
+  font-size: 23px;
+  text-transform: uppercase;
+  font-weight: 700;
+  letter-spacing: 1px;
+  margin-bottom: 5px;
+}
+
+.section-title p {
+  font-size: 14px;
+  text-transform: uppercase;
+  font-weight: 700;
+  letter-spacing: 1px;
+  margin-bottom: 20px;
+}
+
+.menu-grid {
+  display: grid;
+  gap: 40px;
+  padding: 0 24px 48px;
+  margin-top: 40px;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.menu-card {
+  text-align: center;
+  overflow: hidden;
+}
+
+.menu-card img {
+  height: 110px;
+  width: 110px;
+  border-radius: 50%;
+  object-fit: cover;
+  display: block;
+  margin: 0 auto 12px;
+}
+
+.menu-button { 
+  display: inline-block;
+  margin-top: 10px;
+  background: #CC0202;
+  color: white;
+  text-decoration: none;
+  text-transform: uppercase;
+  border-radius: 20px;
+  padding: 8px 8px;
+  font-size: 14px;
+}
+
+.menu-button:hover {
+  text-decoration: underline;
+}
+
+
+
+
+/* Tablet: 3 columns */
+@media (min-width: 700px){
+  .menu-grid{
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+/* Desktop: 6 columns */
+@media (min-width: 1100px){
+  .menu-grid{
+    grid-template-columns: repeat(6, 1fr);
+  }
+}

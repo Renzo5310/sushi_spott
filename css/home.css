@@ -1,0 +1,239 @@
+/* HERO */
+
+.hero-section {
+  position: relative;
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+}
+
+.hero-section img {
+  display: block;
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.hero-title {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding-left: 24px;
+  padding-right: 24px;
+  background: linear-gradient(
+    rgba(0,0,0,0.45),
+    rgba(0,0,0,0.45));             
+}
+
+.hero-title h1 {
+  color: white;
+  font-size: 26px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+
+/* INFO */
+
+.info-section {
+  background: #f5f5f5;
+  color: #111;
+  padding: 35px 22px;
+}
+
+.info-section p {
+  max-width: 850px;
+  margin: 0 auto 18px;
+  font-size: 15px;
+}
+
+
+/* HAPPY HOUR */
+
+.happy-section {
+  background: #b8b8b8;
+  padding-top: 0;
+  padding-left: 25px;
+
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+  align-items: stretch;
+}
+
+.happy-hours {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  max-width: 100%;
+  padding: 22px 0;
+}
+
+.happy-hours h3 {
+  color: white;
+  font-size: 20px;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+}
+
+.happy-hours-list {
+  list-style: none;     
+  padding: 0;
+  margin: 0;
+  display: grid;
+  gap: 10px;            
+}
+
+.happy-hours-list .day {
+  margin-top: 14px;
+  font-weight: 600;
+  font-size: 15px;     /* label size */
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  color: #444;
+}
+
+.happy-hours-list li:not(.day) {
+  font-size: 16px;     /* times bigger */
+  line-height: 1.6;
+  font-weight: 550;
+}
+
+
+
+.happy-img img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+
+
+
+  /* Tablet / half-screen */
+  @media (min-width: 768px) {
+
+    .hero-title h1 {
+    font-size: 30px;
+    }
+
+    .info-section p {
+    font-size: 20px;
+    } 
+
+    .happy-section {
+      gap: 60px;
+      padding-left: 50px;
+    }
+
+    .happy-hours h3 {
+      font-size: 30px;
+    }
+
+    .happy-hours-list .day {
+      font-size: 20px;
+    }
+
+    .happy-hours-list li:not(.day) {
+      font-size: 21px;
+    }
+
+    .happy-img img {
+      height: 380px;
+    }
+  }
+
+
+    /* Large tablet / Ipad Pro */
+    @media (min-width: 1024px) {
+      
+    .hero-title h1 {
+    font-size: 42px;
+    }
+
+    .info-section p {
+    font-size: 28px;
+    } 
+
+    .happy-section {
+      gap: 60px;
+      padding-left: 50px;
+    }
+
+    .happy-hours h3 {
+      font-size: 43px;
+    }
+
+    .happy-hours-list .day {
+      font-size: 30px;
+    }
+
+    .happy-hours-list li:not(.day) {
+      font-size: 30px;
+    }
+
+    .happy-img img {
+      height: 540px;
+    }
+
+    }
+
+
+    /* Desktop */
+    @media (min-width: 1280px) {
+    .footer-content {
+        max-width: 1400px;
+        gap: 120px;
+      }
+
+    .hero-section img {
+      width: 100%;
+      height: 800px;
+      object-fit: cover;
+      display: block;
+      object-position: right bottom;
+    }
+
+    .hero-title h1 {
+    font-size: 60px;
+    padding-left: 50px;
+    }
+
+    .info-section p {
+    font-size: 30px;
+    max-width: 1100px;
+    padding: 15px 0;
+    } 
+
+    .happy-section {
+      gap: 60px;
+      padding-left: 100px;
+    }
+
+    .happy-hours {
+      padding-left: 150px;
+    }
+
+    .happy-hours h3 {
+      font-size: 60px;
+    }
+
+    .happy-hours-list .day {
+      font-size: 38px;
+    }
+
+    .happy-hours-list li:not(.day) {
+      font-size: 40px;
+    }
+
+    .happy-img img {
+      height: 1000px;
+      object-fit: cover;
+      display: block;
+      object-position: right top;
+    }
+    }
+
