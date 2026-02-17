@@ -97,11 +97,41 @@
 }
 }
 
+@media (min-width: 820px){
+
+.menu-header h1 {
+  font-size: 40px;
+}
+
+.menu-header p {
+  font-size: 20px;
+}
+
+.item-name { 
+  font-size: 26px;
+  margin-bottom: 12px;
+}
+
+.item-desc {
+  font-size: 20px;
+}
+
+.item-price {
+  font-size: 26px;
+}
+
+.menu-subtitle {
+  margin-top: 30px;
+  font-size: 27px;
+}
+
+}
+
 /* Large tablet / Ipad Pro */
 @media (min-width: 1024px) {
 
   .menu-list { 
-  max-width: 1100px;
+  max-width: 1200px;
 }
 
   .menu-header h1 {
